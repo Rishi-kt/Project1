@@ -1,0 +1,38 @@
+extends base.pug
+
+block scripts 
+    script(src="/static/index.js") 
+
+    block style 
+        style
+            include ../static/style.css
+
+block content 
+   
+    section#introsection 
+        div Welcome to Rajjari
+        div.small  Let the Indian-ness show! 
+
+    section#Title 
+      h2 Collection    
+    
+    section#collectionsection
+       div#collection1.card
+          h3 banarasi silk    
+       div#collection2.card
+          h3 Nauvari Saree      
+       div#collection3.card
+           h3 Indo-Western Collection     
+       
+    section#sponsorsSection 
+        h2 Our customers 
+        div#customers 
+          img#id1(src="/static/disha.jpg", alt="Customer image", class="cstImg")
+          img#id2(src="/static/katrina1.jpg", alt="Customer image", class="cstImg")
+          img#id3(src="/static/kiara.webp", alt="Customer image", class="cstImg")
+          img#id4(src="/static/tara.jpg", alt="Customer image", class="cstImg")
+
+block foot
+     footer#footer 
+        | Copyright © 2023 Rajjari.com 
+
